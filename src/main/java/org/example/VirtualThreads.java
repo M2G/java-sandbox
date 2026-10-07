@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.concurrent.Executors;
 import java.util.stream.IntStream;
 
+// JAVA 21 (LTS, septembre 2023)
+// @see https://openjdk.org/jeps/444
 public class VirtualThreads {
 
     private final int taskCount;
