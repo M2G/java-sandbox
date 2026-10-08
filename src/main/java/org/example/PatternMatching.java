@@ -2,6 +2,8 @@ package org.example;
 
 import java.util.List;
 
+// JAVA 21
+//@see https://openjdk.org/jeps/431
 public class PatternMatching {
     sealed interface Shape permits Circle, Rect {}
     record Circle(double r) implements Shape {}
