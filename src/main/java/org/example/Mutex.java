@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.concurrent.locks.ReentrantLock;
 
+// @see //@see Source : Javadoc de ReentrantLock, https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/package-summary.html
 public class Mutex {
 
     private final int threadCount;
