@@ -18,7 +18,17 @@ public class Mutex {
         this.threadCount = threadCount;
         this.incrementsPerThread = incrementsPerThread;
     }
-    //
+
+    private void incrementSafe(){
+        lock.lock();
+        try {
+            safeCounter++;
+        } finally {
+            lock.unlock();
+        }
+    }
+
+
     public void run(){
         // ...
     }
