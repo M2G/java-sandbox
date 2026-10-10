@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
+//@see Source : Javadoc de Semaphore https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/package-summary.html
 public class Semaphores {
 
     private final int permits;
