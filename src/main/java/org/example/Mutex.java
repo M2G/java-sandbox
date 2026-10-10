@@ -28,6 +28,10 @@ public class Mutex {
         }
     }
 
+    private void incrementUnsafe() {
+        unsafeCounter++;
+    }
+
 
     public void run(){
         // ...
