@@ -25,10 +25,15 @@ public class Semaphores {
                 final int id = 1;
                 executorService.submit(() -> {
                     try {
+                        semaphore.acquire();
                         try {
-
+                        int now = active.incrementAndGet();
+                        maxActive.accumulateAndGet(now, Math::max);
+                        System.out.println("tache " + id + "démarre (active : " + now + ")");
+                        Thread.sleep(300);
+                        active.decrementAndGet();
                         } finally {
-
+                            semaphore.release();
                         }
                     } catch (InterruptedException e) {
                         Thread.currentThread().interrupt();
