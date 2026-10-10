@@ -6,5 +6,8 @@ public class Main {
     static void main() {
         System.out.println("== Threads virtuels ==");
         new VirtualThreads(10_000).run();
+
+        System.out.println("\n== Semaphore ==");
+        new Semaphores(3, 8).run();
     }
 }
