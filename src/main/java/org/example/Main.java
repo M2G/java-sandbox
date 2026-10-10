@@ -6,8 +6,5 @@ public class Main {
     static void main() {
         System.out.println("== Threads virtuels ==");
         new VirtualThreads(10_000).run();
-
-        System.out.println("\n== Pattern matching ==");
-        PatternMatching.withDefaults().run();
     }
 }
